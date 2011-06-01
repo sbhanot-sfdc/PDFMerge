@@ -1,0 +1,7 @@
+<apex:page standardController="Opportunity" extensions="PDFController" sidebar="false" showHeader="false" action="{!mergeAttachments}">
+    <apex:form >
+        <br/>
+        <br/>
+        <apex:pageMessages />
+    </apex:form>    
+</apex:page>
