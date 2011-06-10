@@ -1,7 +1,6 @@
 public with sharing class PDFController {
 
     private String oppId;
-    public Boolean isTest = false;
     
     private static final String GAE_PDF_MERGE_SVC_URL = 'http://cloudysan.appspot.com/pdfmerge';
     
@@ -40,7 +39,7 @@ public with sharing class PDFController {
             req.setTimeout(60000);
             HttpResponse res;
             
-            if (!isTest)
+            if (!Test.isRunningTest())
             {
                res  = new Http().send(req);
                if (res.getStatusCode() != 200)

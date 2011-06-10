@@ -16,7 +16,6 @@ private class PDFControllerTest
 
         //create instance of pages controller
         PDFController mergeController = new PDFController (controller);
-        mergeController.isTest = true;
         
         //First test error condition - no PDF attachments
         mergeController.mergeAttachments();
